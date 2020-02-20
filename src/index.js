@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './fonts/OpenSans-Bold.ttf';
+import './fonts/OpenSans-Light.ttf';
+import './fonts/OpenSans-Regular.ttf';
+import './fonts/OpenSans-SemiBold.ttf';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
