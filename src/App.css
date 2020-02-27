@@ -1,13 +1,6 @@
 .App {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-
 .App-header {
   background-color: #ffffff;
   min-height: 10vh;
@@ -20,14 +13,32 @@
   padding-left: 2rem;
 }
 
-.Menu {
-  padding: 1rem;
-  padding-left: 12rem;
+.subheading1 {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  color: #FF8F00;
+  font-size: 2rem;
+  font-weight: '600';
 }
 
 .body-text{
   padding-left: 1.4rem;
   padding-right: 1.4rem;
+  font-size: 1rem;
   font-weight: '300';
+  color: #464646;
 }
 
+.subheading2 {
+  padding-top: 2rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: '600';
+  color: #464646;
+}
+
+.specialSize {
+  display: inline;
+  font-size: 2rem;
+}

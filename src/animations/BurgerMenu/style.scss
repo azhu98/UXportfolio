@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    height: 4rem;
+    background-color: white;  
+  
+    .BurgerMenu__container {
+      display: flex;
+      flex-direction: column;
+      margin-top: -0.4rem;
+      margin-left: 12rem;
+      
+      i {
+        background-color: #FF8F00;
+        width: 2rem;
+        height: 0.2rem;
+        margin: 0.2rem;
+        border-radius: 0.1rem;
+        transition:all ease 0.5s;
+      }
+  
+      .open:nth-child(1) {
+        transform: rotate(45deg) translateY(8px) translateX(8px);
+      }
+  
+      .open:nth-child(2) {
+        opacity: 0;
+      }
+  
+      .open:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px) translateX(8px);
+      }
+  
+  
+      .close:nth-child(1) {
+        transform: rotate(0) translateY(0);
+      }
+  
+      .close:nth-child(2) {
+        opacity: 1;
+      }
+  
+      .close:nth-child(3) {
+        transform: rotate(0) translateY(0);
+      }
+    }
+  }
