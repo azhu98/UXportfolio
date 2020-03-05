@@ -10,6 +10,7 @@ nav {
       flex-direction: column;
       margin-top: -0.4rem;
       margin-left: 12rem;
+      display: none;
       
       i {
         background-color: #FF8F00;
@@ -46,3 +47,9 @@ nav {
       }
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .BurgerMenu__container { 
+      display: block;
+  }
+}

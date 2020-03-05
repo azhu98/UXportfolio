@@ -1,7 +1,7 @@
 .App {
 }
 
-.App-header {
+/*.App-header {
   background-color: #ffffff;
   min-height: 10vh;
   display: flex;
@@ -11,6 +11,45 @@
   color: black;
   padding-top: 2rem;
   padding-left: 2rem;
+}
+
+*/
+
+.container {
+  margin: 1.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rem;
+}
+
+.sections {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sections li a {
+  color: #464646;
+  padding: 0.6rem 0.6rem;
+  text-decoration: none;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #FF8F00;
+  cursor: pointer;
+  font-size: 10rem;
+  margin-top: -6rem;
+  margin-left: 16rem;
+  display: none;
+}
+
+.hambuger:focus {
+  outline: none;
 }
 
 .subheading1 {
@@ -41,4 +80,67 @@
 .specialSize {
   display: inline;
   font-size: 2rem;
+}
+
+
+.image {
+  display: block;
+  height: 18.8rem;
+  padding-left: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 28rem;
+  bottom: 0;
+  left: -2rem;
+  height: 19.4rem;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.title {
+  color: #98b5ef;
+  font-size: 20px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: '400';
+}
+
+.subtitle {
+  color: #98b5ef;
+  font-size: 20px;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: '300';
+}
+
+@media screen and (max-width: 767px) {
+  .sections {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  
 }

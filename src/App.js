@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useRef, useState } from 'react';
 import logo from './Logo.png'
 import naturefinder from './Naturefinder.png'
 import starbucks from './Starbucks.png'
@@ -10,10 +10,22 @@ import BurgerMenu from './animations/BurgerMenu';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="Logo" height='60' width='60' />
-        <BurgerMenu />
+      <header>
+        <div class="container">
+        <nav>
+          <img src={logo} alt="Logo" height='60' width='60'/>
+          <button class="hamburger" id="hamburger">
+            <Menu/>
+          </button>
+          <ul class="sections" id="sections">
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Photography</a></li>
+          </ul>
+        </nav>
+        </div>
       </header>
+    
       <h3 className="subheading1">
         Hello~
       </h3>
@@ -24,10 +36,14 @@ function App() {
       <p className="subheading2">
         UX <div className="specialSize"> &#123; </div> 
       </p>
-      <img src={naturefinder} alt="naturefinder" style={{paddingLeft: 22, height: 300, fontStyle:'light'}}/>
-      <p style={{paddingLeft:22, fontSize:12}}>
-      Curating a Mobile Experience for Hikers
-      </p>
+      <div class="project" >
+        <img src={naturefinder} alt="naturefinder" alt = "NatureFinder" class = "image"/>
+        <div class="overlay">
+          <div class="title">Nature Finder</div>
+          <div class = "subtitle">Curating a Mobile Experience for Hikers</div>
+        </div>
+      </div>
+      
       <img src={starbucks} alt="starbucks" style={{paddingLeft: 22, height: 300}}/>
       <p style={{paddingLeft:22, fontSize:12, fontStyle:'light'}}>
       Understanding the Waiting Line Experience
