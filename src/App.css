@@ -24,7 +24,7 @@
 }
 
 .sections-wrap {
-    margin-right: 14rem;
+    margin-right: 16rem;
     display: flex;
     align-items: center;
     position: absolute;
@@ -44,6 +44,20 @@
   text-decoration: none;
   font-size: 1.1rem;
 }
+
+li:hover a {
+  color: #FF8F00;
+  font-weight: bold;
+}
+
+.projects-grid{
+  padding-left: 16rem;
+  padding-right: 16rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+}
+
 
 .hamburger {
   background-color: transparent;
