@@ -1,55 +1,34 @@
 import React, { Component, useEffect, useRef, useState } from 'react';
-import logo from './Logo.png'
-import naturefinder from './Naturefinder.png'
-import starbucks from './Starbucks.png'
+
+import Header from './components/header.js'
+import Projects from './components/projects.js'
+import Footer from './components/footer.js'
+import { BrowserRouter, Route } from 'react-router-dom'
+import About from './components/about.js'
+import Photography from './components/photography.js'
 import './App.css';
-import { Menu } from '@material-ui/icons';
 import BurgerMenu from './animations/BurgerMenu';
+
+{/* change React App for title */}
 
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <div class="container">
-        <nav>
-          <img src={logo} alt="Logo" height='60' width='60'/>
-          <button class="hamburger" id="hamburger">
-            <Menu/>
-          </button>
-          <ul class="sections" id="sections">
-            <li><a href="#">Project</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Photography</a></li>
-          </ul>
-        </nav>
-        </div>
-      </header>
-    
-      <h3 className="subheading1">
-        Hello~
-      </h3>
-      <body className="body-text">
-      My name is Amanda. <br />
-      I strive to use research to propel the creation of benevolent and practical products.
-      </body>
-      <p className="subheading2">
-        UX <div className="specialSize"> &#123; </div> 
-      </p>
-      <div class="project" >
-        <img src={naturefinder} alt="naturefinder" alt = "NatureFinder" class = "image"/>
-        <div class="overlay">
-          <div class="title">Nature Finder</div>
-          <div class = "subtitle">Curating a Mobile Experience for Hikers</div>
-        </div>
+    <BrowserRouter>
+      <div className="App">
+          <Header />
+          <Route path="/" exact component={Projects} />
+          {/*<Route path="/about" exact component={About} />
+              <Route path="/photography" exact component={Photography} />
+        <Route path="/naturefinder" exact component={NatureFinder} />
+          <Route path="/starbucksstudy" exacty component={StarbucksStudy} />  */}
+
+        <Footer /> 
       </div>
-      
-      <img src={starbucks} alt="starbucks" style={{paddingLeft: 22, height: 300}}/>
-      <p style={{paddingLeft:22, fontSize:12, fontStyle:'light'}}>
-      Understanding the Waiting Line Experience
-      </p>
-    </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
