@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import '../App.css'
-
 import data from '../projectdata';
 import Project from './project';
-
 
 {/*}
 function Projects() {
@@ -41,7 +39,7 @@ class Projects extends Component {
             </div>
             <div className="body-text">
                 My name is Amanda. <br />
-                I use research and design to create delightful and functional products.
+                I strive to create delightful and functional products.
             </div>
             <div className="subheading2">
                 UX <div className="specialSize"> &#123; </div>
@@ -50,7 +48,8 @@ class Projects extends Component {
         <div className='projects-grid'>
                 {data.projects.map((project)=>(
                     <Project key={project.id}
-                             imageSrc = {project.imageSrc}
+                        imageSrc = {project.imageSrc}
+                        hoverSrc = {project.hoverSrc}
                      ></Project>
                 ))}
         </div>

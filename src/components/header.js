@@ -13,8 +13,8 @@ function Header() {
                 </button>
                 <div className="sections-wrap">
                 <ul class="sections">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="about">About</a></li>
                 </ul>   
                 </div>       
             </nav>

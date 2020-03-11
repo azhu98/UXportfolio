@@ -6,9 +6,10 @@ function Footer() {
         <header className="footer">
             <div className="footer-text">
                 Amanda Zhu 2020 © <br/ >
-                Made with 🍵 + ❤️ with React
+                🍵 + ❤️ + ⚛️ Made with 
             </div>
         </header>
+       
     )
 }
 
