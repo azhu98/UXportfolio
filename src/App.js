@@ -14,6 +14,7 @@ import BurgerMenu from './animations/BurgerMenu';
 
 function App() {
   return (
+    
     <BrowserRouter>
       <div className="App">
           <Header />

@@ -16,8 +16,8 @@
 */
 
 .navbar {
-  padding-right: 16rem;
-  padding-left: 16rem;
+  width: 68%;
+  margin: auto;
   padding-top: 4rem;
   padding-bottom: 4rem;
 
@@ -77,8 +77,8 @@ li:visited a {
 }
 
 .projects-grid {
-  padding-left: 16rem;
-  padding-right: 16rem;
+  width: 68%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 2rem;
@@ -103,25 +103,27 @@ li:visited a {
 .subheading1 {
   color: #FF8F00;
   font-size: 3rem;
-  padding-left: 16rem;
+  width: 68%;
+  margin: auto;
   padding-bottom: 1rem;
   font-weight: bold;
 }
 
 .body-text{
-  font-size: 1.4rem;
-  padding-left: 16rem;
-  padding-right: 16rem;
+  font-size: 1.6rem;
+  width: 68%;
+  margin: auto;
   font-weight: '300';
   color: #464646;
 }
 
 .subheading2 {
-  padding-top: 5rem;
+  padding-top: 8rem;
   font-size: 1.8rem;
   font-weight: bold;
   color: #464646;
-  padding-left: 16rem;
+  width: 68%;
+  margin: auto;
   padding-bottom: 2rem;
 }
 
@@ -184,13 +186,28 @@ li:visited a {
 
 .footer { 
   padding-top: 6rem;
-  padding-right: 16rem;
+  width: 68%;
+  margin: auto;
 }
 
 .footer-text {
   direction: rtl;
   color: #464646;
   font-weight: '300';
+}
+
+.bio-header {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #FF8F00;
+}
+
+.about-bio {
+  width: 50%;
+  margin: auto;
+  color: #464646;
+  font-weight: '300';
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -201,5 +218,5 @@ li:visited a {
     display: block;
   }
 
-  
+
 }

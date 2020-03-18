@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../App.css'
 import data from '../projectdata';
 import Project from './project';
+import Animation from './textanimation.js'
 
 {/*}
 function Projects() {
@@ -39,7 +40,7 @@ class Projects extends Component {
             </div>
             <div className="body-text">
                 My name is Amanda. <br />
-                I strive to create delightful and functional products.
+                <Animation />
             </div>
             <div className="subheading2">
                 UX <div className="specialSize"> &#123; </div>
