@@ -40,7 +40,7 @@
 
 .sections li a {
   color: #464646;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 1rem;
   text-decoration: none;
   font-size: 1.1rem;
 }
@@ -50,10 +50,6 @@
 }
 
 a {
-  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 0.2rem 0.2rem;
   color: #464646;
   text-decoration: none;
   
@@ -65,15 +61,8 @@ a:hover {
   background-size: auto 6px;
   background-repeat: repeat-x;
   text-decoration: none;
-}
-
-li:hover a {
   color: #464646;
   font-weight: bold;
-}
-
-li:visited a {
-  color: green;
 }
 
 .projects-grid {
@@ -132,65 +121,31 @@ li:visited a {
   font-size: 2rem;
 }
 
-
-.image {
-  display: block;
-  height: 18.8rem;
-  padding-left: 1.4rem;
-  padding-bottom: 2rem;
-}
-
-.overlay {
-  position: absolute;
-  top: 28rem;
-  bottom: 0;
-  left: -2rem;
-  height: 19.4rem;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #FFFFFF;
-}
-
-.project:hover .overlay {
-  opacity: 1;
-}
-
-.title {
-  color: #98b5ef;
-  font-size: 20px;
-  position: absolute;
-  top: 46%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: '400';
-}
-
-.subtitle {
-  color: #98b5ef;
-  font-size: 20px;
-  position: absolute;
-  top: 56%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: '300';
-}
-
-.footer { 
-  padding-top: 6rem;
+.research-wrap {
   width: 68%;
   margin: auto;
 }
 
-.footer-text {
+.footer { 
+  padding-top: 6rem;
+  display: flex;
+  width: 68%;
+  margin: auto;
+}
+
+.social {
+  padding-top: 1.5rem;
+  padding-right: 2rem;
+}
+
+
+.divider {
+  padding-top: 1.5rem;
+  padding-right: 2rem;
+}
+
+.footer-copyright {
+  flex-grow: 7;
   direction: rtl;
   color: #464646;
   font-weight: '300';
@@ -198,7 +153,7 @@ li:visited a {
 
 .bio-header {
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: #FF8F00;
 }
 
@@ -206,8 +161,8 @@ li:visited a {
   width: 50%;
   margin: auto;
   color: #464646;
-  font-weight: '300';
-  font-size: 1.1rem;
+  font-weight: lighter;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 767px) {

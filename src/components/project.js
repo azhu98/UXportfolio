@@ -9,8 +9,8 @@ class Project extends Component {
     render() { 
         let css = { 
             backgroundImage: "url(" + this.state.image + ")",
-            height: "280px", width: "494px",
-            backgroundSize: "contain"
+            height: "276px", width: "492px",
+            backgroundSize: "contain", transition: "0.5s", transitionTimingFunction: "ease-in-out"
         }
         return ( 
             
