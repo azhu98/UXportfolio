@@ -4,7 +4,7 @@ import '../App.css'
 function Research() {
     return (
         <div className="research-wrap">
-            To be updated
+        To be updated 👩‍💻, check back in a bit 
         </div >
     )
 }

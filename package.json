@@ -10,14 +10,18 @@
     "@testing-library/user-event": "^7.2.1",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.4.1",
+    "hamburger-react": "^1.0.1",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
+    "react-animated-burgers": "^1.2.7",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.12.0",
     "react-google-font-loader": "^1.1.0",
     "react-hover-image": "^1.0.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "react-scroll-up-button": "^1.6.4",
+    "vanilla-back-to-top": "^7.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

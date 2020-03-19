@@ -1,5 +1,5 @@
 import React from 'react'
-import './textanimation.css'
+import '../App.css'
 
 function Animation() {
     return (

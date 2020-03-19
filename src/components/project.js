@@ -9,7 +9,7 @@ class Project extends Component {
     render() { 
         let css = { 
             backgroundImage: "url(" + this.state.image + ")",
-            height: "276px", width: "492px",
+            height: "17.25rem", width: "30.75rem",
             backgroundSize: "contain", transition: "0.5s", transitionTimingFunction: "ease-in-out"
         }
         return ( 

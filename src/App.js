@@ -6,15 +6,14 @@ import Research from './components/research.js'
 import About from './components/about.js'
 import Footer from './components/footer.js'
 import { BrowserRouter, Route } from 'react-router-dom'
-import Photography from './components/photography.js'
 import './App.css';
-import BurgerMenu from './animations/BurgerMenu';
 
 
 
 function App() {
   return (
-    
+   
+
     <BrowserRouter>
       <div className="App">
           <Header />
